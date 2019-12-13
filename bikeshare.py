@@ -32,7 +32,7 @@ def get_filters():
     while day not in ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']:
         print('enter a correct day')
         day = input('Enter a day: ').lower()
-    print('-'*40)
+    print('-'*80)
     return city, month, day
 
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -102,7 +102,7 @@ def time_stats(df):
     most_common_hour = df['hour'].mode()[0]
     print('The most common hour: ', most_common_hour)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*80)
 
 
 def station_stats(df):
@@ -119,7 +119,7 @@ def station_stats(df):
     print('The most common end station:', most_common_end_station)
     
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*80)
 
 
 def trip_duration_stats(df):
@@ -135,7 +135,7 @@ def trip_duration_stats(df):
     mean_travel_duration = df['Trip Duration'].mean()
     print('The mean travel duration', mean_travel_duration)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*80)
 
 
 def user_stats(df):
@@ -161,7 +161,7 @@ def user_stats(df):
         most_common = df['Birth Year'].mode()[0]
         print('\nThe most common year: ', most_common)
         print("\nThis took %s seconds." % (time.time() - start_time))
-        print('-'*40)
+        print('-'*80)
    
 
 def main():
@@ -177,9 +177,9 @@ def main():
         provide = input('\nWould you like to see five rows of data?\n')
         n = 0
         while provide == 'yes':
-            print(df[n:n+5])
+            print(df[n:n+10])
             provide = input('\nWould you like to see five rows of data?\n')
-            n = n+5
+            n = n+10
             
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
