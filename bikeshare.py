@@ -177,7 +177,7 @@ def main():
         provide = input('\nWould you like to see five rows of data?\n')
         n = 0
         while provide == 'yes':
-            print(df[n:n+5])
+            print(df[n:n+10])
             provide = input('\nWould you like to see five rows of data?\n')
             n = n+5
             
