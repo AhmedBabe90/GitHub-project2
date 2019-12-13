@@ -5,7 +5,7 @@ the date of creation of the project: 11/08/2019
 Bike share systems study
 
 ### Description
-Describe what your project is about and what it does
+This project make use of python to explore data related to bike share systems for three major cities in United States: Chicago, New York City and Washington. We compare the system usage between these three large cities.
 
 ### Files used
 Include the files used
