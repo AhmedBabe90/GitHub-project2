@@ -8,8 +8,12 @@ Bike share systems study
 This project make use of python to explore data related to bike share systems for three major cities in United States: Chicago, New York City and Washington. We compare the system usage between these three large cities.
 
 ### Files used
-Include the files used
+The files are three datasets named as: chicago.csv, new_york_city.csv and whshington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+There are some links of source data, where the dataset used in the project extracted from. 
+https://www.divvybikes.com/system-data
+https://www.citibikenyc.com/system-data
+https://www.capitalbikeshare.com/system-data
+
 
